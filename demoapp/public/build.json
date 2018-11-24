@@ -1,0 +1,14 @@
+{
+	"js/demoapp.min.js":[
+		"public/templates/map_template.html",
+		"public/templates/user_ui.html",
+		"public/templates/map_view.html",
+		"public/js/map.js",
+		"public/js/leaflet.js",
+		"public/templates/abc.html"
+	],
+	"css/mapview.min.css": [
+		"public/css/leaflet.css",
+		"public/css/mapview.css"
+	]
+}

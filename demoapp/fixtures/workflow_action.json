@@ -1,0 +1,23 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow Action", 
+  "modified": "2018-10-27 16:53:27.922854", 
+  "name": "Approve", 
+  "workflow_action_name": "Approve"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow Action", 
+  "modified": "2018-10-27 16:53:27.925459", 
+  "name": "Reject", 
+  "workflow_action_name": "Reject"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow Action", 
+  "modified": "2018-10-27 16:53:27.927848", 
+  "name": "Review", 
+  "workflow_action_name": "Review"
+ }
+]

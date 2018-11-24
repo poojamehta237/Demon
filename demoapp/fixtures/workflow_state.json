@@ -1,0 +1,29 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "question-sign", 
+  "modified": "2018-10-27 16:53:27.844903", 
+  "name": "Pending", 
+  "style": "", 
+  "workflow_state_name": "Pending"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "ok-sign", 
+  "modified": "2018-10-27 16:53:27.848611", 
+  "name": "Approved", 
+  "style": "Success", 
+  "workflow_state_name": "Approved"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "remove", 
+  "modified": "2018-10-27 16:53:27.851813", 
+  "name": "Rejected", 
+  "style": "Danger", 
+  "workflow_state_name": "Rejected"
+ }
+]

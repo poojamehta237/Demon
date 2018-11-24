@@ -1,0 +1,20 @@
+{
+ "content": null, 
+ "creation": "2018-11-16 15:44:18.632559", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "icon": "", 
+ "idx": 0, 
+ "modified": "2018-11-16 16:05:34.571296", 
+ "modified_by": "Administrator", 
+ "module": "Demon", 
+ "name": "Demopage", 
+ "owner": "Administrator", 
+ "page_name": "Demopage", 
+ "roles": [], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 0, 
+ "title": "Demo Page"
+}

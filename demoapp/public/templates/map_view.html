@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<!-- <button class="btn-sm btn-info refresh_map">Display Map</button> -->
+<div id="mapid">
+	<div class="text-muted not_found">
+		Unable to find Map based on address entered.<br>
+		Please enter latitude, longitude.
+	</div>
+</div>
+<style>
+	#mapid {
+		width: 600px;
+		height: 400px;
+		z-index: 1;
+		border: 1px solid rgba(0, 0, 0, 0.18);
+	}
+	.not_found {
+		text-align: center;
+		padding: 100px;
+	}
+</style>
