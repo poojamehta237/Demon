@@ -52,7 +52,7 @@ app_include_js = "/assets/js/demoapp.min.js"
 # ----------
 
 # automatically create page for each record of this doctype
-# website_generators = ["Web Page"]
+website_generators = ["Web Page"]
 
 # Installation
 # ------------
@@ -95,23 +95,28 @@ doctype_js = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"demoapp.tasks.all"
-# 	],
-# 	"daily": [
-# 		"demoapp.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"demoapp.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"demoapp.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"demoapp.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+	# "all": [
+	# 	"demoapp.demon.doctype.demon_settings.demon_settings.send_mail"
+	# ]
+	# "daily": [
+	# 	"demoapp.tasks.daily"
+	# ],
+	# "hourly": [
+	# 	"demoapp.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"demoapp.tasks.weekly"
+	# ]
+	# "monthly": [
+	# 	"demoapp.tasks.monthly"
+	# ]
+	"cron":{
+		"30 1 * * 1-6": [
+			"demoapp.demon.doctype.demon_settings.demon_settings.send_mail"
+		]
+	}
+}
 
 # Testing
 # -------

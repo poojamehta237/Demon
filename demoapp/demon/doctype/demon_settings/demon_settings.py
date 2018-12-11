@@ -8,3 +8,18 @@ from frappe.model.document import Document
 
 class DemonSettings(Document):
 	pass
+
+@frappe.whitelist()
+def send_mail():
+	print "==================sendmail"
+	frappe.sendmail(
+	recipients="prajapat.rahul0@gmail.com",
+	sender=None,
+	subject="Hello.................",
+	delayed=False,
+	template="new_message",
+	args={
+			"from": "Pookie..........",
+			"message": "Wats Going on"
+			},
+	header=[('New Message'),'orange'])

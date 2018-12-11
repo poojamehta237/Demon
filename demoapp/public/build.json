@@ -5,7 +5,8 @@
 		"public/templates/map_view.html",
 		"public/js/map.js",
 		"public/js/leaflet.js",
-		"public/templates/abc.html"
+		"public/templates/abc.html",
+		"public/templates/barcode_svg.html"
 	],
 	"css/mapview.min.css": [
 		"public/css/leaflet.css",

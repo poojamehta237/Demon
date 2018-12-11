@@ -33,7 +33,6 @@ frappe.ui.form.on('Registration', {
 					},
 				callback:function(r)
 				{	
-					console.log("----callback----",r)
 					var data = r.message;	
 					// if (data['app_key']){
 						var url = "https://maps.googleapis.com/maps/api/geocode/json?address="
@@ -59,11 +58,10 @@ frappe.ui.form.on('Registration', {
 		if(!frm.doc.__islocal){
 			cur_frm.add_custom_button(__("Show UI Form"),function(frm){
 			cur_frm.doc.set_route("UI Form","")
-			console.log("--------")
 		})
 		}
 	},
-	take_image: function(frm) {
+	take_image: function(frm){
 		const capture = new frappe.ui.Capture();
 				capture.open();
 				capture.click((data) => {
@@ -78,14 +76,13 @@ frappe.ui.form.on('Registration', {
 						callback: function(r) {
 							if (r.message) {
 								cur_frm.set_value("driver_photo",r.message['file_url'])
-							}
 						}
-					});
+					}
 				});
-
-				$('*[data-dismiss="modal"]').click(function(){
-					capture.hide()
-				})
+			});
+		$('*[data-dismiss="modal"]').click(function(){
+			capture.hide()
+		})
 	},
 	save:function(frm){
 		frappe.call({
@@ -98,10 +95,22 @@ frappe.ui.form.on('Registration', {
 			},
 			callback:function(r){
 				if(r.message){
-					console.log("----------------------",r.message)
 					cur_frm.set_value("save_sign",r.message['file_url'])
 				}
 			}
 		});
-	}
+	},
+	mobile_no:function(frm){
+		var x = cur_frm.doc.mobile_no
+		z = frm.events.textToBase64Barcode(x,frm);
+		var image_src = frappe.render_template('barcode_svg',{'abc': z});
+ 		$(frm.fields_dict['show_barcode'].wrapper).html(image_src)
+	
+	},
+	textToBase64Barcode: function(x,frm){
+			var canvas = document.createElement("canvas");
+		 	JsBarcode(canvas, x, );
+		 	return canvas.toDataURL("image/png");
+	},
+
 });
