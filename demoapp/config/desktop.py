@@ -10,5 +10,13 @@ def get_data():
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
 			"label": _("Demon")
-		}
+		},
+		{
+			"module_name": "Home",
+			"color": "grey",
+			"icon": "octicon octicon-file-directory",
+			"type": "page",
+			"link": "Home",
+			"label": _("Home")
+		},
 	]
